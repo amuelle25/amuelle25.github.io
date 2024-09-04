@@ -1,0 +1,101 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8; /* Light background for the whole page */
+}
+
+header {
+    background: #008E97; /* Miami Dolphins teal */
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.title-banner {
+    background: #FC4C02; /* Miami Dolphins orange */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 5px solid #008E97; /* Teal border for emphasis */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Grid Container Styles for Home Page and Final Project Page */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px; /* Space between grid items */
+    background-color: #ffffff; /* White background for spacing effect */
+    padding: 20px; /* Add padding to ensure spacing from container edges */
+    border-radius: 10px; /* Optional: for rounded corners on the container */
+}
+
+/* Grid Item Styles */
+.grid-item {
+    background: #008E97; /* Miami Dolphins teal */
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.grid-item a {
+    color: #ffffff; /* Miami Dolphins orange */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.grid-item a:hover {
+    text-decoration: underline;
+}
+
+/* Home Page Specific Styles */
+.home-page .grid-container {
+    margin: 0 auto; /* Center align grid-container if needed */
+}
+
+/* Final Project Page Specific Styles */
+.final-project .grid-container {
+    margin: 0 auto; /* Center align grid-container if needed */
+    background-color: #e0f2f1; /* Light teal background for sections */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* About and Other Sections */
+.about-me, .final-project {
+    padding: 20px;
+    background: #e0f2f1; /* Light teal background for sections */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Ensure there is space between sections */
+}
