@@ -3,24 +3,28 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f2f2f2; /* Light gray background */
 }
 
 header {
-    background: mustardyellow;
-    color: black;
-    padding: 10px 20px;
+    background: #d32f2f; /* Spider-Man red */
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
 }
 
 .title-banner {
-    background: navy;
+    background: #0d47a1; /* Spider-Man blue */
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 15px 0;
+    border-bottom: 5px solid #d32f2f; /* Red border for emphasis */
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
     text-align: center;
 }
 
@@ -32,6 +36,7 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 
 nav ul li a:hover {
@@ -40,34 +45,45 @@ nav ul li a:hover {
 
 main {
     padding: 20px;
-}
-
-.projects {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 15px;
 }
 
 .box {
-    background: navy;
+    background: #0d47a1; /* Spider-Man blue */
     color: white;
-    padding: 15px;
+    padding: 20px;
     text-align: center;
-    border-radius: 5px;
-    flex: 1 1 calc(33% - 30px);
-    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .box a {
     color: white;
     text-decoration: none;
     display: block;
+    font-size: 1.2em;
 }
 
 .box a:hover {
     text-decoration: underline;
+    color: #ffeb3b; /* Spider-Man yellow for hover effect */
 }
 
 .about-me, .final-project {
     padding: 20px;
+    background: #e3f2fd; /* Light blue background for sections */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background: #d32f2f; /* Spider-Man red */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
