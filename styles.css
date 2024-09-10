@@ -47,7 +47,7 @@ main {
     padding: 20px;
 }
 
-/* Grid Container Styles for Home Page and Final Project Page */
+/* Home Page and Final Project Page Grid Container Styles */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -66,6 +66,9 @@ main {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
+.grid-item-picture{
+    width: 500px;
+}
 
 .grid-item a {
     color: #ffffff; /* Miami Dolphins orange */
@@ -77,25 +80,28 @@ main {
     text-decoration: underline;
 }
 
-/* Home Page Specific Styles */
-.home-page .grid-container {
-    margin: 0 auto; /* Center align grid-container if needed */
-}
-
-/* Final Project Page Specific Styles */
-.final-project .grid-container {
-    margin: 0 auto; /* Center align grid-container if needed */
-    background-color: #e0f2f1; /* Light teal background for sections */
+/* About Me Page Specific Styles */
+.about-me {
+    display: flex;
+    gap: 20px;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* About and Other Sections */
-.about-me, .final-project {
-    padding: 20px;
-    background: #e0f2f1; /* Light teal background for sections */
+    background: #e0f2f1; /* Light teal background */
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px; /* Ensure there is space between sections */
+    align-items: center; /* Vertically align image and text */
 }
+
+.about-me img {
+    width: 5%; /* Reduced width for a smaller image */
+    height: 10px;
+    border-radius: 10px;
+}
+
+/* Larger text specifically for About Me page */
+.about-me p {
+    font-size: 1.5rem; /* Larger text for readability */
+    line-height: 1.8; /* Improved line spacing for readability */
+    flex: 1; /* Make the text take up the remaining space next to the image */
+}
+
