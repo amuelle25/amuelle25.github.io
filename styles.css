@@ -70,7 +70,7 @@ main {
     display: flex;
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
-    height: 100vh; /* Optional: sets the height of the container */
+    height: 90vh; /* Optional: sets the height of the container */
 
 .grid-item a {
     color: #ffffff; /* Miami Dolphins orange */
