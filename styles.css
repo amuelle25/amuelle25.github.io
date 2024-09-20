@@ -68,9 +68,10 @@ main {
 }
 .grid-item-picture{
     display: flex;
+
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
-    height: 90vh; /* Optional: sets the height of the container */
+    width: 100%; /* Optional: sets the height of the container */
 
 .grid-item a {
     color: #ffffff; /* Miami Dolphins orange */
@@ -101,8 +102,12 @@ main {
 }
 
 /* Larger text specifically for About Me page */
-.about-me p {
+.about.html  {
     font-size: 1.5rem; /* Larger text for readability */
     line-height: 1.8; /* Improved line spacing for readability */
     flex: 1; /* Make the text take up the remaining space next to the image */
+}
+
+.grid-item img{
+    width:100px;
 }
