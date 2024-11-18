@@ -130,3 +130,13 @@ main {
     height: 600px;
     border: none;
 }
+.grid-item-photo {
+    display: flex;
+    border-radius: 10px;
+    gap: 20px;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 40%; /* Sets the width of the container */
+    height: 40%
+    margin-top: 20px; /* Adds space between the text above and the picture */
+}
